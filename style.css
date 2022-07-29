@@ -19,6 +19,64 @@ body {
 
 /* Desktop Styles */
 
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.total-box-qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content-box-qr {
+    display: inline-block;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: var(--white-color);
+    box-shadow: 0 8px 65px -35px var(--grayish-blue),
+        0 10px 50px -5px var(--light-gray);
+    border-radius: 15px;
+    width: 65%;
+}
+
+.image-qr {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.total-text-qr {
+    text-align: center;
+    padding: 0 8px;
+}
+
+.titel-qr {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.description-qr {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
 
 
 /* Mobile Styles */
+
+@media only screen and (max-width: 468px) {
+    .total-box-qr {
+        margin: 100px 0;
+    }
+
+    .content-box-qr {
+        width: 70%;
+    }
+}
